@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Burgers-fron": {
+    "burgers-front": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -62,11 +62,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "BurgersFront:build"
+            "browserTarget": "burgers-front:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "BurgersFront:build:production"
+              "browserTarget": "burgers-front:build:production"
             }
           }
         },
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "BurgersFront:serve"
+            "devServerTarget": "burgers-front:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "BurgersFront:serve:production"
+              "devServerTarget": "burgers-front:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "BurgersFront"
+  "defaultProject": "burgers-front"
 }
