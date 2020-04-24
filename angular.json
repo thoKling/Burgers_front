@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Burgers-fron",
+            "outputPath": "dist/BurgersFront",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Burgers-fron:build"
+            "browserTarget": "BurgersFront:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Burgers-fron:build:production"
+              "browserTarget": "BurgersFront:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Burgers-fron:build"
+            "browserTarget": "BurgersFront:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Burgers-fron:serve"
+            "devServerTarget": "BurgersFront:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Burgers-fron:serve:production"
+              "devServerTarget": "BurgersFront:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Burgers-fron"
+  "defaultProject": "BurgersFront"
 }
