@@ -1,7 +1,11 @@
 <h2>Des supers burgers</h2>
-<ul class="heroes">
-  <li *ngFor="let burger of burgers">
-    {{burger.name}} : {{burger.price}}
-    <img src="{{burger.image}}">
-  </li>
-</ul>
+<mat-card *ngFor="let burger of burgers">
+  <mat-card-title>
+    {{burger.id}} - {{burger.name}}
+  </mat-card-title>
+  <mat-card-content>
+    <img width="200" height="150" src="{{burger.image}}"/>
+    <h3>{{burger.price}} $</h3>
+    <button mat-button routerLink="/burgers/details/{{burger.id}}" routerLinkActive="active">Details</button>
+  </mat-card-content>
+</mat-card>
