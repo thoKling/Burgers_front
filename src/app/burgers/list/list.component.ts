@@ -14,7 +14,7 @@ export class ListComponent implements OnInit {
 
   constructor(private burgersService: BurgersService) { }
 
-  ngOnInit(): void {0
+  ngOnInit(): void {
     this.burgersService.listBurgers().subscribe(
       burgers => this.burgers = burgers
     )
